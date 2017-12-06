@@ -3,6 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import * as http from '@/util/Request'
+import * as mock from './mock.js'
+
+Vue.prototype.axios = axios;
+Vue.prototype.$http = http;
 
 Vue.config.productionTip = false
 
